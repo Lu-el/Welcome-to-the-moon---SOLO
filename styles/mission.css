@@ -1,0 +1,155 @@
+@font-face {
+  font-family: 'goodblinn';
+  src: local('goodblinn'),
+      local('goodblinn'),
+      /* url('../fonts/Inter-Bold.woff2') format('woff2'), */
+      url('../fonts/goodblinn.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+
+.mission {
+  background: #36454F;
+}
+
+.mission__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 600px) {
+  .mission__container {
+    gap: 10px;
+  }
+}
+
+.mission__card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-grow: 1;
+  max-width: 100%;
+  height: 175px;
+  background: #FFF;
+  border-radius: 10px;
+  transition: 0.5s;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.mission__card:hover {
+  height: 300px;
+}
+
+@media (min-width: 600px) {
+  .mission__card {
+    height: 300px;
+    border-radius: 20px;
+  }
+}
+
+.mission__img-box {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  height: 100px;
+  background: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.mission__card:hover .mission__img-box {
+  top: -50px;
+  scale: 0.75;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 600px) {
+  .mission__img-box {
+    border-radius: 12px;
+    height: 220px;
+
+  }
+
+  .mission__card:hover .mission__img-box {
+    top: -100px;
+  }
+}
+
+.mission__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mission__content {
+  position: absolute;
+  top: 130px;
+  width: 100%;
+  height: 25px;
+  padding: 0 10px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.mission__card:hover .mission__content {
+  top: 60px;
+  height: 250px;
+}
+
+@media (min-width: 600px) {
+  .mission__content {
+    top: 252px;
+    height: 35px;
+  }
+
+  .mission__card:hover .mission__content {
+    top: 130px;
+    height: 250px;
+  }
+}
+
+.mission__title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--clr);
+}
+
+.mission__text {
+  color: #333;
+}
+
+@media (min-width: 600px) {
+  .mission__text {
+    font-size: 0.8rem;
+  }
+
+  .mission__title {
+    font-size: 1.5rem;
+  }
+}
+
+.mission__points {
+  margin-top: 5px;
+  font-weight: bold;
+  color: red;
+  font-size: 2.5rem;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 15px;
+  flex-grow: 1;
+  font-family: "goodblinn", sans-serif;
+  opacity: 0.5;
+}

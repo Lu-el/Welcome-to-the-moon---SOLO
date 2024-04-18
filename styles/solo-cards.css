@@ -1,0 +1,8 @@
+.solo-cards {
+  display: flex;
+}
+
+.solo-cards__img {
+  width: 50%;
+  height: fit-content;
+}

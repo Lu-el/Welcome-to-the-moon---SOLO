@@ -1,0 +1,51 @@
+.start-game {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fdc75b;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.start-game__container {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  color: #555555;
+  flex-direction: column;
+}
+
+.start-game__select {
+  color: #555555;
+}
+
+.start-game__button {
+  position: absolute;
+  top: 50%;
+
+  width: 500px;
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: large;
+  font-weight: 900;
+  cursor: pointer;
+  z-index: 1;
+}
+
+@media (min-width: 600px) {
+  .start-game__container {
+    flex-direction: row;
+  }
+
+  .start-game__button {
+    width: 500px;
+    left: calc(50% - 500px / 2);
+  }
+}
+
+

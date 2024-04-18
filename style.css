@@ -1,0 +1,81 @@
+@import "styles/default.css";
+@import "styles/cards.css";
+@import "styles/button.css";
+@import "styles/tableSolo.css";
+@import "styles/mission.css";
+@import "styles/restCards.css";
+@import "styles/startGame.css";
+@import "styles/select.css";
+@import "styles/solo-cards.css";
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* body {
+  margin: 0;
+  padding: 0;
+
+  color: black;
+  font-family: 'Open Sans', sans-serif;
+} */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(./img/moon.jpg);
+  color: #35353C;
+}
+
+.main {
+  width: 100vw;
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.footer {
+  width: 100vw;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.table-card__column_solo {
+  background-color: deeppink;
+  filter: blur(2px);
+  scale: 0.9;
+}
+
+.table-card__column_solo:hover {
+  background-color: rgb(175, 105, 143);
+}
+
+.container__solo {
+  display: flex;
+  gap: 5px;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+  .container__solo {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+  }
+}
+
+
+
