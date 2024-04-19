@@ -242,7 +242,52 @@ export const scenarios = [
 
   {
     level: 3,
-    urlBot: "./img/scenarios/scenario3.jpg"
+    urlBot: "./img/scenarios/scenario3.jpg",
+    missions: [{
+      type: "A",
+      mission: [
+        {
+          url: './img/scenarios/scenario3/missionA1.jpg',
+          description: 'Пронумеруйте 3 любых вертикальных ряда',
+          points: [12, 6]
+        },
+        {
+          url: './img/scenarios/scenario3/missionA2.jpg',
+          description: 'Пронумеруйте 3 любых горизонтальных ряда',
+          points: [12, 5]
+        }
+      ],
+    },
+    {
+      type: "Б",
+      mission: [
+        {
+          url: './img/scenarios/scenario3/missionB1.jpg',
+          description: 'Соедините обсерваторию со звездолетом тоннелями',
+          points: [9, 4]
+        },
+        {
+          url: './img/scenarios/scenario3/missionB2.jpg',
+          description: 'Обведите все радиотелескопы в 2х любых кварталов',
+          points: [9, 4]
+        }
+      ],
+    }, {
+      type: "В",
+      mission: [
+        {
+          url: './img/scenarios/scenario3/missionC1.jpg',
+          description: 'Обведите 10 растений',
+          points: [8, 4]
+        },
+        {
+          url: './img/scenarios/scenario3/missionC2.jpg',
+          description: 'Обведите все резервуары с водой в 2 любых кварталах',
+          points: [9, 5]
+        }
+      ]
+    }
+    ]
   },
 
   {
@@ -347,17 +392,152 @@ export const scenarios = [
 
   {
     level: 6,
-    urlBot: "./img/scenarios/scenario6.jpg"
+    urlBot: "./img/scenarios/scenario6.jpg",
+    missions: [{
+      type: "A",
+      mission: [
+        {
+          url: './img/scenarios/scenario6/missionA1.jpg',
+          description: 'Эвакуируйте 2 жилых блока. Они могут быть частично или полностью заражены',
+          points: [8, 3]
+        },
+        {
+          url: './img/scenarios/scenario6/missionA2.jpg',
+          description: 'Эвакуируйте все жилые блоки на одном уровне. Они могут быть частично или полностью заражены',
+          points: [8, 3]
+        }
+      ],
+    },
+    {
+      type: "Б",
+      mission: [
+        {
+          url: './img/scenarios/scenario6/missionB1.jpg',
+          description: 'Перекройте все проходы 3 жылых блока',
+          points: [11, 4]
+        },
+        {
+          url: './img/scenarios/scenario6/missionB2.jpg',
+          description: 'Перекройте все проходы с зеленым и синим вирусом',
+          points: [12, 5]
+        }
+      ],
+    }, {
+      type: "В",
+      mission: [
+        {
+          url: './img/scenarios/scenario6/missionC1.jpg',
+          description: 'Обведите все энергоблоки на2 любых уровнях',
+          points: [10, 4]
+        },
+        {
+          url: './img/scenarios/scenario6/missionC2.jpg',
+          description: 'Обведите все теплица и резервуары на2 любых уровнях',
+          points: [10, 4]
+        }
+      ]
+    }
+    ]
   },
 
   {
     level: 7,
-    urlBot: "./img/scenarios/scenario7.jpg"
+    urlBot: "./img/scenarios/scenario7.jpg",
+    missions: [{
+      type: "A",
+      mission: [
+        {
+          url: './img/scenarios/scenario7/missionA1.jpg',
+          description: 'Пронумеруйте 3 любые теплицы и обведите в каждой по 3 растения',
+          points: [10, 5]
+        },
+        {
+          url: './img/scenarios/scenario7/missionA2.jpg',
+          description: 'Пронумеруйте теплицу на самом высоком уровне и обведите в ней 3 растения',
+          points: [7, 3]
+        }
+      ],
+    },
+    {
+      type: "Б",
+      mission: [
+        {
+          url: './img/scenarios/scenario7/missionB1.jpg',
+          description: 'Целиком заполните суммарно 7 модулей звездолетов',
+          points: [9, 4]
+        },
+        {
+          url: './img/scenarios/scenario7/missionB2.jpg',
+          description: 'Целиком заполните 3 звездолета',
+          points: [10, 5]
+        }
+      ],
+    }, {
+      type: "В",
+      mission: [
+        {
+          url: './img/scenarios/scenario7/missionC1.jpg',
+          description: 'Обведите все энергоблоки у 3 любых звездолетов',
+          points: [10, 5]
+        },
+        {
+          url: './img/scenarios/scenario7/missionC2.jpg',
+          description: 'Обведите все резервуары у 3 любых звездолетов',
+          points: [10, 5]
+        }
+      ]
+    }
+    ]
   },
 
   {
     level: 8,
-    urlBot: "./img/scenarios/scenario8.jpg"
+    urlBot: "./img/scenarios/scenario8.jpg",
+    missions: [{
+      type: "A",
+      mission: [
+        {
+          url: './img/scenarios/scenario8/missionA1.jpg',
+          description: 'Захватите 4 планеты на одном поле',
+          points: [12, 5]
+        },
+        {
+          url: './img/scenarios/scenario8/missionA2.jpg',
+          description: 'Захватите по 1 планете каждого типа на одном поле',
+          points: [9, 4]
+        }
+      ],
+    },
+    {
+      type: "Б",
+      mission: [
+        {
+          url: './img/scenarios/scenario8/missionB1.jpg',
+          description: 'С помощью "Инженерный отдел" впишите свой символ в 7 астероидов на одном поле',
+          points: [9, 5]
+        },
+        {
+          url: './img/scenarios/scenario8/missionB2.jpg',
+          description: 'УвУвеличьте ценность каждого типа планет дважды на одном поле',
+          points: [11, 6]
+        }
+      ],
+    }, {
+      type: "В",
+      mission: [
+        {
+          url: './img/scenarios/scenario8/missionC1.jpg',
+          description: 'Зачеркните 6 растения и 4 воды в зоне подсчёта очков на одном поле',
+          points: [10, 4]
+        },
+        {
+          url: './img/scenarios/scenario8/missionC2.jpg',
+          description: 'С помощью "Центр управления" впишите свой символ в 4 разных спутника на одном поле',
+          points: [10, 6]
+        }
+      ]
+    }
+    ]
   },
 ]
 
