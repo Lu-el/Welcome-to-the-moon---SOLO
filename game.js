@@ -34,7 +34,7 @@ const buttonNewDeckAction = (deck, tableCard, soloTotal, tableSolo, setGame) => 
     deckSecond[index].usedSolo = true;
 
     changeSoloTotal(soloCard, soloTotal);
-    soloTableLayot(tableSolo, soloTotal, setGame.level);
+    soloTableLayot(tableSolo, soloTotal, setGame.level, setGame.scenario);
     removeUsedCard(tableCard);
     nextCardsFirstUse(deckSecond, tableCard, soloTotal, tableSolo, setGame, button, 2);
   })
@@ -117,7 +117,7 @@ const buttonNextCard = (shufledDeck, tableCard, soloTotal, tableSolo, setGame) =
     shufledDeck[index].usedSolo = true;
 
     changeSoloTotal(soloCard, soloTotal);
-    soloTableLayot(tableSolo, soloTotal, setGame.level);
+    soloTableLayot(tableSolo, soloTotal, setGame.level, setGame.scenario);
     removeUsedCard(tableCard);
     nextCardsFirstUse(shufledDeck, tableCard, soloTotal, tableSolo, setGame, button);
   })

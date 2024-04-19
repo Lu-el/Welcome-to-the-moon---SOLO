@@ -23,7 +23,7 @@ export const getBot = (array, level) => {
 }
 
 
-export const soloTableLayot = (container, cards, level) => {
+export const soloTableLayot = (container, cards, level, scenario) => {
   container.innerHTML = "";
   let total = 0;
 
@@ -70,6 +70,20 @@ export const soloTableLayot = (container, cards, level) => {
   const tdTotal = document.createElement('td');
   tdTotal.classList.add('table-solo__data', 'table-solo__data_level');
   tdTotal.innerHTML = total;
+  
+  if (scenario == 1) {
+    td3.classList.add('table-solo__data', 'table-solo__data_level');
+    tdName.innerHTML = "Максимум/Итого"
+    if (level === 1) {
+      td3.innerHTML = 81 - 15 
+    } else {
+      td3.innerHTML = 81 - (2 * (8 - level))
+    }
+    if (total >= +td3.innerHTML) {
+      tdTotal.style.color = 'red';
+    }
+  }
+
   row.append(td1, tdName, td3, tdTotal);
 
   container.append(row);
