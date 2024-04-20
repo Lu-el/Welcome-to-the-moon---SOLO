@@ -13,26 +13,18 @@
   box-sizing: border-box;
 }
 
-/* body {
-  margin: 0;
-  padding: 0;
-
-  color: black;
-  font-family: 'Open Sans', sans-serif;
-} */
-
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   min-height: 100vh;
   background-image: url(./img/moon.jpg);
+  background-size: cover;
   color: #35353C;
 }
 

@@ -56,13 +56,13 @@ const addAstra = (deck) => {
   };
   const astraB = {
     type: 'Astra',
-    number: 'B',
+    number: 'Б',
     usedSolo: false,
     countUses: 0
   };
   const astraC = {
     type: 'Astra',
-    number: 'C',
+    number: 'В',
     usedSolo: false,
     countUses: 0
   };

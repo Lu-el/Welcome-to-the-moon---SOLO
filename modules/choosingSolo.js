@@ -127,7 +127,7 @@ const footerLayot = (scenario) => {
   const container = document.querySelector('.mission__container');
 
   scenario.missions.forEach(item => {
-    const index = getRandomNumber(0, 1);
+    const index = getRandomNumber(0, (item.mission.length - 1));
     const goal = item.mission[index];
 
     const card = document.createElement('div');

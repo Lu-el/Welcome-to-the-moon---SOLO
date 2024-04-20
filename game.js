@@ -18,7 +18,6 @@ const buttonNewDeckAction = (deck, tableCard, soloTotal, tableSolo, setGame) => 
   }
 
   const deckSecond = deckSecondUsed(deck);
-  console.log(deckSecond);
 
   if (tableCard.innerHTML == "") {
     nextCardsFirstUse(deckSecond, tableCard, soloTotal, tableSolo, setGame, button, 2);
@@ -133,7 +132,7 @@ const init = () => {
   const newDeck = getNewDeck(signs, deck);
   const tableCard = document.querySelector('.cards__overloy');
   const tableSolo = document.querySelector('.table-solo__body');
-  const soloCards = document.querySelector('solo-cards');
+  const soloCards = document.querySelector('.solo-cards');
   const soloTotal = [];
   const setGame = {
     level: 1,
@@ -150,7 +149,5 @@ const init = () => {
 }
 
 init();
-
-// Выберите миссию и уровень сложности бота
 
 
