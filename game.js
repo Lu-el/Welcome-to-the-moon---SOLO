@@ -108,6 +108,7 @@ const buttonNextCard = (shufledDeck, tableCard, soloTotal, tableSolo, setGame) =
   button.addEventListener('click', () => {
     const soloCard = document.querySelector('.table-card__column_solo');
 
+
     if (!soloCard) { return }
 
     const index = [...tableCard.children].indexOf(soloCard);
@@ -130,6 +131,9 @@ const game = (shufledDeck, tableCard, soloTotal, tableSolo, setGame) => {
 
 const init = () => {
   const newDeck = getNewDeck(signs, deck);
+
+  // const newGame = new GameWelcomeTM(newDeck);
+
   const tableCard = document.querySelector('.cards__overloy');
   const tableSolo = document.querySelector('.table-solo__body');
   const soloCards = document.querySelector('.solo-cards');
@@ -149,5 +153,20 @@ const init = () => {
 }
 
 init();
+
+class GameWelcomeTM {
+  constructor(deck) {
+    this.deck = deck;
+    this.level = 1;
+    this.scenario = 1;
+    this.missions = [];
+    this.bot = {};
+    this.soloTotal = [];
+  }
+
+  setLocalStorage() {
+    localStorage.setItem(GameWelcomeTM, JSON.stringify(this));
+  }
+}
 
 

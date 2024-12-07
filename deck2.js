@@ -212,12 +212,12 @@ export const scenarios = [
       type: "Б",
       mission: [
         {
-          url: './img/scenarios/scenario1/missionB1.jpg',
+          url: './img/scenarios/scenario2/missionB1.jpg',
           description: 'Полностью заполните 2 отрезка по 6 ячеек',
           points: [11, 6]
         },
         {
-          url: './img/scenarios/scenario1/missionB2.jpg',
+          url: './img/scenarios/scenario2/missionB2.jpg',
           description: 'Создайте 3 заполненных отрезка',
           points: [12, 6]
         }
@@ -226,12 +226,12 @@ export const scenarios = [
       type: "В",
       mission: [
         {
-          url: './img/scenarios/scenario1/missionC1.jpg',
+          url: './img/scenarios/scenario2/missionC1.jpg',
           description: 'Обведите 6 резервуаров',
           points: [9, 5]
         },
         {
-          url: './img/scenarios/scenario1/missionC2.jpg',
+          url: './img/scenarios/scenario2/missionC2.jpg',
           description: 'Обведите 4 резервуара, расположенных подряд',
           points: [11, 6]
         }

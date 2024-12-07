@@ -79,6 +79,8 @@ export const getNewDeck = (signs, example) => {
   const shuffledDeck = shuffle(deck);
   const readyDeck = addAstra(shuffledDeck);
 
+  console.log(readyDeck);
+  
   return readyDeck;
 }
 
